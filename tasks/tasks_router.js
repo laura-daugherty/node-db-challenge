@@ -6,8 +6,15 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   Tasks.getTasks()
-  .then(task => {
-    res.status(200).json(task)
+  .then(tasks => {
+    tasks.forEach(task => {
+      if (task.task_complete === 1) {
+        task.task_complete = "true"
+      } else {
+        task.task_complete = "false"
+      }
+    })
+    res.status(200).json(tasks)
   })
   .catch(err => {
     res.status(500).json({message: "Big ole error"})

@@ -1,49 +1,49 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('actions').insert([{
-    "description": "Fuscia",
-    "notes": "optional info",
+  return knex('tasks').insert([{
+    "task_description": "Fuscia",
+    "task_notes": "optional info",
     "task_complete":"0",
     "project_id":"1"    
   }, {
-    "description": "Teal",
-    "notes": "optional info",
+    "task_description": "Teal",
+    "task_notes": "optional info",
     "task_complete":"0",
     "project_id":"1"
   }, {
-    "description": "TickleMePink",
-    "notes": "optional info",
+    "task_description": "TickleMePink",
+    "task_notes": "optional info",
     "task_complete":"0",
     "project_id":"2"
   }, {
-    "description": "Goldenrod",
-    "notes": "optional info",
+    "task_description": "Goldenrod",
+    "task_notes": "optional info",
     "task_complete":"0",
     "project_id":"2"
   }, {
-    "description": "Turquoise",
-    "notes": "optional info",
+    "task_description": "Turquoise",
+    "task_notes": "optional info",
     "task_complete":"1",
     "project_id":"3"
   }, {
-    "description": "Purple",
-    "notes": "optional info",
+    "task_description": "Purple",
+    "task_notes": "optional info",
     "task_complete":"1",
     "project_id":"4"
   }, {
-    "description": "Brown",
-    "notes": "optional info",
+    "task_description": "Brown",
+    "task_notes": "optional info",
     "task_complete":"1",
     "project_id":"4"
   }, {
-    "description": "Red",
-    "notes": "optional info",
+    "task_description": "Red",
+    "task_notes": "optional info",
     "task_complete":"1",
     "project_id":"5"
   }, {
-    "description": "Aquamarine",
-    "notes": "optional info",
+    "task_description": "Aquamarine",
+    "task_notes": "optional info",
     "task_complete":"1",
     "project_id":"6"
   }]);
