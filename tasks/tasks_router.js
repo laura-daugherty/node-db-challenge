@@ -1,13 +1,13 @@
 const express = require('express');
 
-const Actions = require('./actions_model.js');
+const Tasks = require('./tasks_model.js');
 
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  Actions.getActions()
-  .then(action => {
-    res.status(200).json(action)
+  Tasks.getTasks()
+  .then(task => {
+    res.status(200).json(task)
   })
   .catch(err => {
     res.status(500).json({message: "Big ole error"})
@@ -15,10 +15,10 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  const newAction = req.body;
-  Actions.addActions(newAction)
-  .then(action => {
-    res.status(200).json(action)
+  const newTask = req.body;
+  Tasks.addTasks(newTask)
+  .then(task => {
+    res.status(200).json(task)
   })
   .catch(err => {
     res.status(500).json({message: "Big ole error"})

@@ -1,29 +1,23 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('projects').insert([{
+  return knex('resources').insert([{
     "name": "Ceratotherium simum",
     "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "project_complete": "0"  
   }, {
     "name": "Hippotragus equinus",
     "description": "Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-    "project_complete": "0"
   }, {
     "name": "Dasyurus maculatus",
     "description": "Nullam molestie nibh in lectus.",
-    "project_complete": "0"
   }, {
     "name": "Mephitis mephitis",
     "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo.",
-    "project_complete": "1"
   }, {
     "name": "Marmota monax",
     "description": "Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio.",
-    "project_complete": "1"
   }, {
     "name": "Galago crassicaudataus",
     "description": "Curabitur in libero ut massa volutpat convallis.",
-    "project_complete": "1"
   }]);
 }
