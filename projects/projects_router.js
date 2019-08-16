@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
     res.status(200).json(projects)
   })
   .catch(err => {
-    res.status(500).json({message: "Big ole error"})
+    res.status(500).json({message: "Error getting Projects"})
   })  
 });
 
@@ -28,7 +28,7 @@ router.post('/', (req, res) => {
     res.status(200).json(project)
   })
   .catch(err => {
-    res.status(500).json({message: "Big ole error"})
+    res.status(500).json({message: "Error adding project"})
   })
 })
 
